@@ -3,7 +3,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebas
 import { getDatabase, ref, push } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
 
 const appSettings = {
-    databaseURL: "https://basket-1596d-default-rtdb.firebaseio.com/"
+    databaseURL: "Some key from Firebase libraries.com.com/"
 };
 
 const app = initializeApp(appSettings);
