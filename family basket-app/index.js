@@ -3,7 +3,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebas
 import { getDatabase, ref, push } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
 
 const appSettings = {
-    databaseURL: "Some key from Firebase libraries.com" //Enter the key from the Firebase database
+    databaseURL: "Some key from Firebase Realtime Database/com" //Enter the key from the Firebase -Realtime Database
 };
 
 const app = initializeApp(appSettings);
