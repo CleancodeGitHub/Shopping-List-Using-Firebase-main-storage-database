@@ -1,0 +1,168 @@
+/* Style*/
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+  background-color: #eef0f4;
+  color: #432000;
+  -webkit-user-select: none;
+  /* Disable text selection */
+  user-select: none;
+}
+
+/* Image styles */
+img {
+  width: 250px;
+  display: block;
+  /* Ensure images are block-level elements */
+  margin: 0 auto;
+}
+
+/* Input styles */
+input {
+  color: inherit;
+  /* Inherit color from parent */
+  background-color: #dce1eb;
+  border: 1px solid #000000;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 20px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* List styles */
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+ul li {
+  flex-grow: 1;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 1px 2px 3px rgba(0 0 0 / 0.5);
+  color: #a52a2a;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+
+ul li:hover {
+  background: #81061c;
+  color: #ffffff;
+}
+
+/* Container styles */
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+  margin: 30px auto;
+}
+
+/* Animation styles */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.transition {
+  transition: all 0.3s ease;
+}
+
+/* Button container */
+.sort-buttons-container {
+  margin: 20px 0;
+}
+
+/* Empty list message */
+#empty-list {
+  display: none;
+  text-align: center;
+  font-style: italic;
+  color: gray;
+}
+
+/* Toast container */
+#toast-container {
+  position: fixed;
+  z-index: 9999;
+}
+
+/* Toast message */
+.toast {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 4px;
+  opacity: 1;
+  transition: opacity 0.1s ease-in-out;
+}
+
+/* Toast message animation */
+.toast.show {
+  opacity: 1;
+}
+
+/* Bought item */
+.bought {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+/* Action button */
+#action-button {
+  display: flex;
+  padding-inline: 0.3em;
+}
+
+/* Add and clear button styles */
+#add-button,
+#clear-button {
+  color: #fdfdfd;
+  background-color: #ac485a;
+  border: 0;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#clear-button {
+  margin-left: auto;
+}
+
+/* Button hover styles */
+#add-button:hover {
+  background-color: #8a2b3d;
+  font-weight: bold;
+}
+
+#clear-button:hover {
+  background: #a50303;
+  font-weight: bold;
+}
